@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+
+      database: articledb
+      #默認就是27017、可省略
+      port: 27017
+      #也可使用uri方式
+      uri: mongodb://localhost:27017/articledb
+      
+      #如果是連接叢集，需用uri mongodb://host1,host2,host3/db?connect=replicaSet&slaveOk=true&replicaSet=副本集名字
+      #uri: mongodb://192.168.191.133:27017,192.168.191.133:27018,192.168.191.133:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
