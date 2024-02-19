@@ -11,3 +11,6 @@ spring:
       
       #如果是連接叢集，需用uri mongodb://host1,host2,host3/db?connect=replicaSet&slaveOk=true&replicaSet=副本集名字
       #uri: mongodb://192.168.191.133:27017,192.168.191.133:27018,192.168.191.133:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+      
+      #如果是路由節點，需用uri
+      #uri: mongodb://192.168.191.133:27017,192.168.191.133:27117/articledb
