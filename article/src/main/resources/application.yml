@@ -7,10 +7,19 @@ spring:
       #默認就是27017、可省略
       port: 27017
       #也可使用uri方式
-      uri: mongodb://localhost:27017/articledb
+      #uri: mongodb://localhost:27017/articledb
       
       #如果是連接叢集，需用uri mongodb://host1,host2,host3/db?connect=replicaSet&slaveOk=true&replicaSet=副本集名字
       #uri: mongodb://192.168.191.133:27017,192.168.191.133:27018,192.168.191.133:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
       
       #如果是路由節點，需用uri
       #uri: mongodb://192.168.191.133:27017,192.168.191.133:27117/articledb
+      
+      #如果是單機有驗證的情況
+      #uri: mongodb://bobo:123456@192.168.191.133:27017/articledb
+      
+      #如果副本集有認證的情況
+      #uri: mongodb://bobo:123456@192.168.191.133:27017,192.168.191.133:27018,192.168.191.133:27019/articledb?connect=replicaSet&slaveOk=true&replicaSet=myrs
+      
+      #如果是路由節點有認證的情況
+      #uri: mongodb://bobo:123456@192.168.191.133:27017,192.168.191.133:27117/articledb
